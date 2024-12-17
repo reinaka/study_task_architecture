@@ -1,0 +1,19 @@
+{
+  "name": "@services/host",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@packages/build_config": "*",
+    "@packages/shared": "*"
+  },
+  "devDependencies": {
+    "react": "^19.0.0",
+    "react-router-dom": "^7.0.2"
+  }
+}
