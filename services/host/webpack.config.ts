@@ -5,7 +5,6 @@ import {
     BuildPaths,
     BuildPlatform,
     buildWebpack,
-    BuildOptions
 } from '@packages/build_config';
 import packageJson from './package.json';
 
@@ -18,7 +17,7 @@ interface EnvVariables {
     ADMIN_REMOTE_URL?: string;
 }
 
-export default (env: EnvVariables) => {
+const config = (env: EnvVariables) => {
     const paths: BuildPaths = {
         output: path.resolve(__dirname, 'build'),
         entry: path.resolve(__dirname, 'src', 'index.tsx'),
@@ -66,3 +65,5 @@ export default (env: EnvVariables) => {
 
     return config;
 };
+
+export default config;
