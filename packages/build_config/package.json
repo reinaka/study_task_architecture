@@ -1,5 +1,5 @@
 {
-  "name": "build_config",
+  "name": "@packages/build_config",
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {
