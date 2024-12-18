@@ -1,4 +1,4 @@
-.main__wrapper {
+.wrapper {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 90%;
     margin: 0 auto;
@@ -9,13 +9,22 @@
     gap: 30px;
 }
 
-.links__wrapper, .buttons__wrapper {
+.heading {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-style: italic;
+    font-weight: 200;
 }
 
-.count {
-    font-size: 24px;
-    font-weight: 400;
+.heading__page {
+    text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-style: normal;
+	font: {
+		size: 5vw;
+	};
 }

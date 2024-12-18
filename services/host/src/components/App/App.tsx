@@ -18,8 +18,8 @@ export const App = () => {
         <main className={styles.main__wrapper}>
            <h1>HOST PAGE</h1>
            <div className={styles.links__wrapper}>
-                <Link to="/page_1">Page 1</Link>
-                <Link to="/page_2">Page 2</Link>
+                <Link to="/shop">Shop</Link>
+                <Link to="/admin">Admin</Link>
            </div>
            <div className={styles.count}>{count}</div>
            <div className={styles.buttons__wrapper}>
