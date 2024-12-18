@@ -21,6 +21,7 @@ export const App = () => {
                 <Link to="/shop">Shop</Link>
                 <Link to="/admin">Admin</Link>
                 <Link to="/contacts">Contacts</Link>
+                <Link to="/order">Order</Link>
            </div>
            <div className={styles.count}>{count}</div>
            <div className={styles.buttons__wrapper}>

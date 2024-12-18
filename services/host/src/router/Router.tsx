@@ -6,6 +6,8 @@ import shopRoutes from 'shop/Router';
 import adminRoutes from 'admin/Router';
 //@ts-ignore
 import contactsRoutes from 'contacts/Router';
+//@ts-ignore
+import orderRoutes from 'order/Router';
 
 export const router = createBrowserRouter([
     {
@@ -14,7 +16,8 @@ export const router = createBrowserRouter([
       children: [
         ...shopRoutes,
         ...adminRoutes,
-        ...contactsRoutes
+        ...contactsRoutes,
+        ...orderRoutes
       ]
     }
 ]);

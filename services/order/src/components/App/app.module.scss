@@ -1,0 +1,30 @@
+.wrapper {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.heading__page {
+    text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-style: normal;
+	font: {
+		size: 5vw;
+	};
+}
