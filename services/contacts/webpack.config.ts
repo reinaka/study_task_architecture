@@ -21,7 +21,7 @@ export default (env: envVariables) => {
         public: path.resolve(__dirname, 'public')
     };
     const config: webpack.Configuration = buildWebpack({
-        port: env.port ?? 3002,
+        port: env.port ?? 3003,
         mode: env.mode ?? 'development',
         paths,
         analyzer: env.analyzer,
@@ -30,7 +30,7 @@ export default (env: envVariables) => {
 
     config.plugins.push(
         new webpack.container.ModuleFederationPlugin({
-            name: 'admin',
+            name: 'contacts',
             filename: 'remoteEntry.js',
             exposes: {
                 './Router': './src/router/Router.tsx'

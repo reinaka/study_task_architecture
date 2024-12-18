@@ -4,6 +4,8 @@ import { App } from "@/components/App";
 import shopRoutes from 'shop/Router';
 //@ts-ignore
 import adminRoutes from 'admin/Router';
+//@ts-ignore
+import contactsRoutes from 'contacts/Router';
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +13,8 @@ export const router = createBrowserRouter([
       element: <App />,
       children: [
         ...shopRoutes,
-        ...adminRoutes
+        ...adminRoutes,
+        ...contactsRoutes
       ]
     }
 ]);

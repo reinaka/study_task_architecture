@@ -5,7 +5,6 @@ import {
     BuildPaths,
     BuildPlatform,
     buildWebpack,
-    BuildOptions
 } from '@packages/build_config';
 import packageJson from './package.json';
 
