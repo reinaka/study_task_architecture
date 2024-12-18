@@ -1,13 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM, { createRoot } from 'react-dom/client';
 import { App } from './components/App/App';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+const root = document.getElementById('root');
+
+if(!root) throw new Error('root is not found');
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: []
+  }
+]);
+
+const container = createRoot(root);
+container.render(<RouterProvider router={router} />)

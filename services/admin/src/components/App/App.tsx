@@ -1,0 +1,32 @@
+import { useState } from 'react';
+import { Outlet} from 'react-router-dom';
+import { Link, Button } from '../ui';
+import * as styles from './app.module.scss';
+
+export const App = () => {
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+        setCount((prev) => ++prev);
+    }
+
+    const decrement = () => {
+        if(count > 0) setCount((prev) => --prev);
+    }
+
+    return (
+        <main className={styles.main__wrapper}>
+           <h1>SHOP</h1>
+           <div className={styles.links__wrapper}>
+                <Link to="/page_1">Page 1</Link>
+                <Link to="/page_2">Page 2</Link>
+           </div>
+           <div className={styles.count}>{count}</div>
+           <div className={styles.buttons__wrapper}>
+                <Button onClickHandler={increment}>+</Button>
+                <Button onClickHandler={decrement}>-</Button>
+           </div>
+           <Outlet />
+        </main>
+    )
+}
